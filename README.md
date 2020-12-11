@@ -1,1 +1,8 @@
 # Renault-Zoe-NEW-API-Prtg
+
+Custom PRTG Python script for monitoring your Renault ZOE.
+Based on the work from here : https://github.com/jamesremuscat/pyze, with a simple PRTG wrapper for JSON results.
+
+outputs basic information like battery status, range, plugged in status and charging status.
+DON'T FORGET TO CHANGE YOUR CREDENTIALS BEFORE RUNNING.
+Gigya and Kamereon API keys are the same for all Renault, no need to touch them.
