@@ -15,12 +15,13 @@ k.set_api_key('oF09WnKqvBDcrQzcW1rJNpjIuy7KdGaB')
 v = Vehicle('VIN', k) 
 
 data=v.battery_status()
+data_hvac=v.hvac_status()
 
 sensor = CustomSensorResult()
 sensor.add_channel(name='Battery Percentage',unit='Percent',value=data['batteryLevel'])
 sensor.add_channel(name='Range',unit='KM',value=data['batteryAutonomy'])
+sensor.add_channel(name='External Temperature',unit='Temperature',value=data_hvac['externalTemperature'])
 sensor.add_channel(name='Plugged In',value=data['plugStatus'])
 sensor.add_channel(name='Charging Status',value=data['chargingStatus'])
 
 print(sensor.json_result)
-
