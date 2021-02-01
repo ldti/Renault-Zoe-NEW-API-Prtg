@@ -11,7 +11,7 @@ g.set_api_key('3_e8d4g4SE_Fo8ahyHwwP7ohLGZ79HKNN2T8NjQqoNnk6Epj6ilyYwKdHUyCw3wux
 g.login('email', 'password')
 g.account_info()
 k = Kamereon(gigya=g)
-k.set_api_key('oF09WnKqvBDcrQzcW1rJNpjIuy7KdGaB')
+k.set_api_key('Ae9FDWugRxZQAGm3Sxgk7uJn6Q4CGEA2')
 v = Vehicle('VIN', k) 
 
 data=v.battery_status()
